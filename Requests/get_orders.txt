@@ -3,19 +3,41 @@ Este request nos servirá para traer los datos corresponientes a una pagina de o
 Metodo: POST
 URL: http://gammaintegration.shipedge.com/API/Rest/v2/Orders/get_orders
 
-----------------CODIGO----------------------
+Parametros.
+Key (es siempre la misma) = lx4q68n1wzutbyr7fvmk0ghoed32pc95
+Warehouse = bx1
+account_id = 13
+page: puede variar dependiendo el status que consultemos y cuantas ordenes existan en total en ese estado
+status: puede ser "all", "shipped", "pending"
+
+----------------REQUEST----------------------
 
 {
   "key": "lx4q68n1wzutbyr7fvmk0ghoed32pc95",
   "warehouse": "bx1",
   "account_id": 13,
   "page": 1,
-  "status": "all"
+  "status": "pending"
 }
 
+--------------RESPUESTA---------------------
 
-Key es siempre la misma
-Warehouse= bx1
-account_id = 13
-Page: puede variar dependiendo el status que consultemos y cuantas ordenes existan en total en ese estado
-Status: puede ser "all", "shipped" o  "pending"
+{
+    "status": "successful",
+    "total_orders": "68",
+    "total_pages": 4,
+    "orders": [
+        {
+            "order_id": "45512",
+            "order_number": "10927299",
+            "reference_number": "",
+            "date": "2021-08-17 11:05:14",
+            "status": {
+                "id": "3",
+                "description": "pending"
+            },
+            "cart": {
+                "cart": null,
+                "store_id": null
+            },
+      ETC ETC ETC
