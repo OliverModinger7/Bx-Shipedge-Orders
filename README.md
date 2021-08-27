@@ -2,6 +2,7 @@
 Documentación para integracion Bluex Shipedge 
 
 Adjunto Carpeta Request con la informacion de las consultas y como usarlas
+
 Adjunto Postman Collection con las mismas consultas para quien lo vaya a utilizar
 
 * URL: http://gammaintegration.shipedge.com/API/Rest/v2/Orders/
