@@ -9,7 +9,7 @@ Warehouse = bx1
 account_id = 13
 status: puede ser "all", "shipped", "pending"
 
-----------------EJEMPLO DE REQUEST----------------------
+----------------REQUEST----------------------
 
 {
   "key": "lx4q68n1wzutbyr7fvmk0ghoed32pc95",
