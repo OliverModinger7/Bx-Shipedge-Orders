@@ -1,0 +1,127 @@
+Este request nos servirá para poder agregar ordenes
+
+Metodo: POST
+URL: http://gammaintegration.shipedge.com/API/Rest/v2/Orders/add_orders
+
+Parametros.
+Key (es siempre la misma) = lx4q68n1wzutbyr7fvmk0ghoed32pc95
+Warehouse = bx1
+account_id = 13
+Datos de orden
+
+----------------REQUEST----------------------
+{
+  "key": "lx4q68n1wzutbyr7fvmk0ghoed32pc95",
+  "warehouse": "bx1",
+  "account_id": 13,
+  "orders": [
+    {
+      "order_number": "20",
+      "reference_number": "123",
+      "order_comments": "Comments",
+      "shipping": {
+        "method": "DROPSHIP"
+      },
+      "customer":{
+        "email": "test@mail.com",
+        "phone": "123345",
+        "first_name": "Luis1",
+        "last_name": "cust Name",
+        "company": "cust Company",
+        "address1": "123 Campbellton",
+        "address2": "cust Address2",
+        "city": "Montague – PE",
+        "state": "PE",
+        "zip": "C0A 1R0",
+        "country": "Canada"
+      },
+      "billing": {
+        "first_name": "Bill FName",
+        "last_name": "Bill LName",
+        "company": "Bill Company",
+        "address1": "Bill Address1",
+        "address2": "Bill Address2",
+        "city": "Los angeles",
+        "state": "CA",
+        "zip": "60915",
+        "country": "USA"
+      },
+      "cod_amount": "",
+      "insurance_amount": "NO",
+      "signature_required": "NO",
+      "residential": "YES",
+      "store_id": "",
+      "release_date" : "",
+      "items": [
+        {
+          "sku": "111-01950",
+          "quantity": 1,
+          "sold_price": "2.2200",
+          "description": "sell by user example"
+        },
+        {
+          "sku": "111-12301",
+          "quantity": 2,
+          "sold_price": "3.3333",
+          "description": "sell by user example 3333"
+        }
+      ]
+    },
+    {
+      "order_number": "21",
+      "reference_number": "456",
+      "order_comments": "Comments",
+      "shipping": {
+        "method": "DROPSHIP"
+      },
+      "customer" : {
+        "email": "test@mail.com",
+        "phone": "6789000",
+        "first_name": "Bruce",
+        "last_name": "cust Name",
+        "company": "cust Company",
+        "address1": "123 Campbellton",
+        "address2": "cust Address2",
+        "city": "Montague – PE",
+        "state": "PE",
+        "zip": "C0A 1R0",
+        "country": "Canada",
+        "comments": ""
+      },
+      "billing":{
+        "first_name": "Bill FName",
+        "last_name": "Bill LName",
+        "company": "Bill Company",
+        "address1": "Bill Address1",
+        "address2": "Bill Address2",
+        "city": "Los angeles",
+        "state": "CA",
+        "zip": "60915",
+        "country": "USA"
+      },
+      "cod_amount": "",
+      "insurance_amount": "",
+      "signature_required": "NO",
+      "residential": "YES",
+      "store_id": "",
+      "release_date" : "",
+      "items": [
+        {
+          "sku": "AC-F2-F15",
+          "quantity": 1,
+          "sold_price": "2.2200",
+          "description": "sell by user example"
+        },
+        {
+          "sku": "AC-F3-F14",
+          "quantity": 2,
+          "sold_price": "3.3333",
+          "description": "sell by user example 3333"
+        }
+      ]
+    }
+  ]
+}
+
+
+
