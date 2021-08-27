@@ -1,0 +1,151 @@
+Este request nos servirá para revisar si se efectuo el envío
+
+Metodo: POST
+URL: http://gammaintegration.shipedge.com/API/Rest/v2/Orders/get_shipment_out
+
+Parametros.
+Key (es siempre la misma) = lx4q68n1wzutbyr7fvmk0ghoed32pc95
+Warehouse = bx1
+account_id = 13
+order_id: id de la orden que queremos ver
+
+----------------REQUEST----------------------
+{
+    "account_id": 13,
+    "key": "lx4q68n1wzutbyr7fvmk0ghoed32pc95",
+    "warehouse": "bx1",
+    "order_id": "1150"
+}
+
+--------------RESPUESTA---------------------
+{
+    "status": "successful",
+    "shipments": [
+        {
+            "order": {
+                "order_id": "1150",
+                "order_number": "11042534",
+                "order_reference": "",
+                "date": "2020-11-23 15:07:41",
+                "seller_name": null,
+                "order_comments": "",
+                "currency": "usd",
+                "warehouse": "bx1",
+                "comments_warehouse": null,
+                "url_logo": null,
+                "label_ready": null
+            },
+            "customer": {
+                "title": "",
+                "first_name": "Martin Hernandez",
+                "last_name": "",
+                "email": "",
+                "company": "",
+                "phone": "123456789",
+                "address1": "Manantiales 1440  Casa 502",
+                "address2": "",
+                "city": "Concon",
+                "state": "Valparaiso",
+                "zip": "Concon",
+                "country": "chile"
+            },
+            "billing": {
+                "title": "",
+                "first_name": "Martin Hernandez",
+                "last_name": "",
+                "email": "",
+                "company": "",
+                "phone": "",
+                "address1": "Manantiales 1440  Casa 502",
+                "address2": "",
+                "city": "Concon",
+                "state": "Valparaiso",
+                "zip": "Concon",
+                "country": "chile"
+            },
+            "seller": {
+                "title": "",
+                "first_name": "",
+                "last_name": "",
+                "email": null,
+                "phone": null,
+                "company": "",
+                "department": "13",
+                "address1": null,
+                "address2": null,
+                "city": null,
+                "state": null,
+                "zip": null,
+                "country": null
+            },
+            "shipments": [
+                {
+                    "shipment_id": "1150",
+                    "shipment_number": "11042534",
+                    "shipping_method": "BEPRI",
+                    "shipping_method_description": "BlueExpress Priority",
+                    "shipping_carrier": "BlueExpress",
+                    "tracking_number": "742",
+                    "services": {
+                        "insurance": "",
+                        "require_signature": "",
+                        "saturday_delivery": "No",
+                        "residential": ""
+                    },
+                    "boxes": [
+                        {
+                            "id": "1150",
+                            "box_number": "11042534",
+                            "total_weight": null,
+                            "length": null,
+                            "width": null,
+                            "height": null,
+                            "package_type": null,
+                            "category": "Indiano",
+                            "products": [
+                                {
+                                    "sku": "5060294050919",
+                                    "upc": "5060294050919",
+                                    "description": "Sidamo Etiopia",
+                                    "quantity": "1",
+                                    "sold_price": "0.00",
+                                    "country_orig": "US",
+                                    "harmonization": "",
+                                    "weight": "0.2000"
+                                },
+                                {
+                                    "sku": "5060294051091",
+                                    "upc": "5060294051091",
+                                    "description": "Decaffeinato",
+                                    "quantity": "2",
+                                    "sold_price": "0.00",
+                                    "country_orig": "US",
+                                    "harmonization": "",
+                                    "weight": "0.2000"
+                                },
+                                {
+                                    "sku": "5060294051114",
+                                    "upc": "5060294051114",
+                                    "description": "Indiano",
+                                    "quantity": "1",
+                                    "sold_price": "0.00",
+                                    "country_orig": "US",
+                                    "harmonization": "",
+                                    "weight": "0.2000"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+--------------ERROR POSIBLE---------------------
++Cuando no se ha realizado el envío
+
+{
+    "status": "successful",
+    "shipments": []
+}
