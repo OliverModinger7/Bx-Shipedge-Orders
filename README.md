@@ -1,8 +1,11 @@
 # Bx-Shipedge
-Documentación para integracion Bluex Shipedge
+Documentación para integracion Bluex Shipedge 
+* URL: http://gammaintegration.shipedge.com/API/Rest/v2/Orders/
+* Key: lx4q68n1wzutbyr7fvmk0ghoed32pc95
+* WH: bx1
+* 
 
-
-### EXTRAS
+#### EXTRAS
 * Estados: Shipped, Pending
 * Fecha vs Paginas de Ordenes:
   * 11/2020= 1
