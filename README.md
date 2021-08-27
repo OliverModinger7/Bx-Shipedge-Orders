@@ -1,10 +1,8 @@
 # Bx-Shipedge
-documentación para integracion Bluex Shipedge
+Documentación para integracion Bluex Shipedge
 
 
-
-
-- ----------EXTRAS---------
+### EXTRAS
 * Estados: Shipped, Pending
 * Fecha vs Paginas de Ordenes:
   * 11/2020= 1
