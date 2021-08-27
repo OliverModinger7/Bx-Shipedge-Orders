@@ -1,9 +1,13 @@
 # Bx-Shipedge
 Documentación para integracion Bluex Shipedge 
+
+Adjunto Carpeta Request con la informacion de las consultas y como usarlas
+Adjunto Postman Collection con las mismas consultas para quien lo vaya a utilizar
+
 * URL: http://gammaintegration.shipedge.com/API/Rest/v2/Orders/
 * Key: lx4q68n1wzutbyr7fvmk0ghoed32pc95
 * WH: bx1
-* 
+* Account_id: 13
 
 #### EXTRAS
 * Estados: Shipped, Pending
